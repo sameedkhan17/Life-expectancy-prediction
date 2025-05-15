@@ -19,20 +19,34 @@ model = load_model('linear_model.pkl')
 # Sidebar inputs for features
 def user_input_features():
     st.sidebar.header('Model Input Parameters')
-    Adult_Mortality = st.sidebar.number_input('Adult Mortality', min_value=0.0, value=100.0)
-    infant_deaths = st.sidebar.number_input('Infant Deaths', min_value=0.0, value=0.0)
-    Alcohol = st.sidebar.number_input('Alcohol (per capita)', min_value=0.0, value=5.0)
-    percentage_expenditure = st.sidebar.number_input('Percentage Expenditure', min_value=0.0, value=1000.0)
-    BMI = st.sidebar.number_input('BMI', min_value=0.0, value=25.0)
-    under_five_deaths = st.sidebar.number_input('Under-five Deaths', min_value=0.0, value=0.0)
-    Polio = st.sidebar.number_input('Polio Immunization (%)', min_value=0.0, max_value=100.0, value=90.0)
-    Diphtheria = st.sidebar.number_input('Diphtheria Immunization (%)', min_value=0.0, max_value=100.0, value=90.0)
-    HIV_AIDS = st.sidebar.number_input('HIV/AIDS Death Rate', min_value=0.0, value=0.1)
-    GDP = st.sidebar.number_input('GDP per Capita', min_value=0.0, value=10000.0)
-    thinness_1_19 = st.sidebar.number_input('Thinness 1-19 years', min_value=0.0, value=2.0)
-    thinness_5_9 = st.sidebar.number_input('Thinness 5-9 years', min_value=0.0, value=2.0)
-    Income_composition = st.sidebar.number_input('Income Composition of Resources', min_value=0.0, max_value=1.0, value=0.7)
-    Schooling = st.sidebar.number_input('Schooling (years)', min_value=0.0, value=12.0)
+    Adult_Mortality = st.sidebar.number_input(
+        'Adult Mortality', min_value=0.0, value=172.0)
+    infant_deaths = st.sidebar.number_input(
+        'Infant Deaths', min_value=0.0, value=17.0)
+    Alcohol = st.sidebar.number_input(
+        'Alcohol (per capita)', min_value=0.0, value=7.2)
+    percentage_expenditure = st.sidebar.number_input(
+        'Percentage Expenditure', min_value=0.0, value=1150.0)
+    BMI = st.sidebar.number_input(
+        'BMI', min_value=0.0, value=44.1)
+    under_five_deaths = st.sidebar.number_input(
+        'Under-five Deaths', min_value=0.0, value=23.0)
+    Polio = st.sidebar.number_input(
+        'Polio Immunization (%)', min_value=0.0, max_value=100.0, value=81.0)
+    Diphtheria = st.sidebar.number_input(
+        'Diphtheria Immunization (%)', min_value=0.0, max_value=100.0, value=90.0)
+    HIV_AIDS = st.sidebar.number_input(
+        'HIV/AIDS Death Rate', min_value=0.0, value=1.06)
+    GDP = st.sidebar.number_input(
+        'GDP per Capita', min_value=0.0, value=9126.0)
+    thinness_1_19 = st.sidebar.number_input(
+        'Thinness 1-19 years', min_value=0.0, value=3.3)
+    thinness_5_9 = st.sidebar.number_input(
+        'Thinness 5-9 years', min_value=0.0, value=3.35)
+    Income_composition = st.sidebar.number_input(
+        'Income Composition of Resources', min_value=0.0, max_value=1.0, value=0.64)
+    Schooling = st.sidebar.number_input(
+        'Schooling (years)', min_value=0.0, value=13.4)
 
     data = {
         'Adult Mortality': Adult_Mortality,
